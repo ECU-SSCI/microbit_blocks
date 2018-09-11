@@ -20,4 +20,6 @@ Blockly.Python.init = function(workspace) {
   } else {
     Blockly.Python.variableDB_.reset();
   }
+
+  Blockly.Python.variableDB_.setVariableMap(workspace.getVariableMap());
 }
