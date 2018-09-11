@@ -1,8 +1,5 @@
 'use strict';
 
-goog.provide('Blockly.Python.speech');
-goog.require('Blockly.Python');
-
 Blockly.Python.addReservedWords('speech');
 
 

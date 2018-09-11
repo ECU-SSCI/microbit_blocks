@@ -1,10 +1,5 @@
 'use strict';
 
-goog.provide('Blockly.Msg.en');
-
-goog.require('Blockly.Msg');
-
-
 Blockly.Msg.MICROBIT_ACCELEROMETER_GET_X_MESSAGE0 = 'Accelerometer X axis';
 Blockly.Msg.MICROBIT_ACCELEROMETER_GET_X_TOOLTIP = 'Get the acceleration measurement in the X axis.';
 Blockly.Msg.MICROBIT_ACCELEROMETER_GET_X_HELPURL = 'https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.get_x';

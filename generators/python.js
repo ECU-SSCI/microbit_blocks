@@ -3,10 +3,6 @@ Overrides for generic Python code generation.
 */
 'use strict';
 
-goog.provide('Blockly.Python');
-
-goog.require('Blockly.Generator');
-
 Blockly.Python.init = function(workspace) {
   /**
     * Empty loops or conditionals are not allowed in Python.
