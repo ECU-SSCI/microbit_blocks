@@ -5,6 +5,25 @@ Blockly.FieldColour.COLOURS = ['#f00', '#e00', '#d00', '#c00', '#b00', '#a00',
 Blockly.FieldColour.COLUMNS = 5;
 
 
+Blockly.Blocks['math_number'] = {
+  init: function() {
+    this.jsonInit(
+      {
+        "message0": "number %1",
+        "args0": [{
+          "type": "field_number",
+          "name": "NUM",
+          "value": 0
+        }],
+        "output": "Number",
+        "colour": "%{BKY_MATH_HUE}",
+        "helpUrl": "%{BKY_MATH_NUMBER_HELPURL}",
+        "tooltip": "%{BKY_MATH_NUMBER_TOOLTIP}",
+        "extensions": ["parent_tooltip_when_inline"]
+      });
+  }
+}
+
 Blockly.Blocks['microbit_accelerometer_get_x'] = {
   init: function() {
     this.jsonInit({"colour": 0, "output": "Number", "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.get_x", "tooltip": "Get the acceleration measurement in the X axis.", "message0": "Accelerometer X axis"});
