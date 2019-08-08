@@ -1,7 +1,7 @@
 'use strict';
 
-Blockly.FieldColour.COLOURS = ['#f00', '#e00', '#d00', '#c00', '#b00', '#a00',
-                               '#800', '#600', '#400', '#000'];
+Blockly.FieldColour.COLOURS = ['#ff0000', '#ee0000', '#dd0000', '#cc0000', '#bb0000', '#aa0000',
+                               '#880000', '#660000', '#440000', '#000000'];
 Blockly.FieldColour.COLUMNS = 5;
 
 
