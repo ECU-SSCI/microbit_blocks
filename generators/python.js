@@ -23,3 +23,14 @@ Blockly.Python.init = function(workspace) {
 
   Blockly.Python.variableDB_.setVariableMap(workspace.getVariableMap());
 }
+
+Blockly.Python.refinedImport = function(import_statement, obj) {
+  let mod = `from ${import_statement.split('_')[1]} import`;
+  if (Blockly.Python.definitions_[import_statement] == undefined) {
+    return `${mod} ${obj}`;
+  } else {
+    let libs = Blockly.Python.definitions_[import_statement].split(' ').slice(3).map(l=>l.replace(',',''))
+    if (libs.find(e=>e==obj) == undefined) return `${Blockly.Python.definitions_[import_statement]}, ${obj}`;
+    else return Blockly.Python.definitions_[import_statement];
+  }
+};

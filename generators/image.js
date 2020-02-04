@@ -39,6 +39,7 @@ Blockly.Python['microbit_image_create'] = function(block) {
     "#ee0000": "8",
     "#ff0000": "9"
   }
+  console.log(block.getFieldValue('00'))
   var colour_00 = colours[block.getFieldValue('00')];
   var colour_01 = colours[block.getFieldValue('01')];
   var colour_02 = colours[block.getFieldValue('02')];
