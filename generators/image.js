@@ -5,28 +5,28 @@ Blockly.Python.addReservedWords('microbit');
 
 
 Blockly.Python['microbit_image_builtins'] = function(block) {
-  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
+  Blockly.Python.definitions_['import_microbit'] = Blockly.Python.refinedImport('import_microbit', `Image`);
   var dropdown_image = block.getFieldValue('image');
   var code = 'Image.' + dropdown_image;
   return [code, Blockly.Python.ORDER_MEMBER];
 };
 
 Blockly.Python['microbit_image_copy'] = function(block) {
-  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
+  Blockly.Python.definitions_['import_microbit'] = Blockly.Python.refinedImport('import_microbit', `Image`);;
   var value_image = Blockly.Python.valueToCode(block, 'image', Blockly.Python.ORDER_MEMBER);
   var code = value_image + '.copy()';
   return [code, Blockly.Python.ORDER_MEMBER];
 };
 
 Blockly.Python['microbit_image_invert'] = function(block) {
-  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
+  Blockly.Python.definitions_['import_microbit'] = Blockly.Python.refinedImport('import_microbit', `Image`);;
   var value_image = Blockly.Python.valueToCode(block, 'image', Blockly.Python.ORDER_MEMBER);
   var code = value_image + '.invert()';
   return [code, Blockly.Python.ORDER_MEMBER];
 };
 
 Blockly.Python['microbit_image_create'] = function(block) {
-  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
+  Blockly.Python.definitions_['import_microbit'] = Blockly.Python.refinedImport('import_microbit', `Image`);
   var colours = {
     "#000000": "0",
     "#440000": "1",
