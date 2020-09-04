@@ -1,5 +1,7 @@
 'use strict';
 
+import * as Blockly from 'blockly/core';
+
 Blockly.Python.addReservedWords('speech');
 
 

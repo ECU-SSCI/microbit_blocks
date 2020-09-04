@@ -3,6 +3,10 @@ Overrides for generic Python code generation.
 */
 'use strict';
 
+
+import * as Blockly from 'blockly/core';
+
+
 Blockly.Python.init = function(workspace) {
   /**
     * Empty loops or conditionals are not allowed in Python.

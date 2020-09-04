@@ -1,5 +1,7 @@
 'use strict';
 
+import * as Blockly from 'blockly/core';
+
 Blockly.Python.addReservedWords('music');
 
 Blockly.Python['microbit_music_play_built_in'] = function(block) {

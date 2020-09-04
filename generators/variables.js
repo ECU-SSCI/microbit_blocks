@@ -1,5 +1,7 @@
 'use strict';
 
+import * as Blockly from 'blockly/core';
+
 Blockly.Python['variables_set'] = function(block) {
   // Variable setter.
   var argument0 = Blockly.Python.valueToCode(block, 'VALUE',

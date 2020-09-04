@@ -1,5 +1,7 @@
 'use strict';
 
+import * as Blockly from 'blockly/core';
+
 // Any imports need to be reserved words
 Blockly.Python.addReservedWords('microbit');
 

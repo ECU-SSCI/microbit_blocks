@@ -1,9 +1,10 @@
 'use strict';
 
+import * as Blockly from 'blockly/core';
+
 Blockly.FieldColour.COLOURS = ['#ff0000', '#ee0000', '#dd0000', '#cc0000', '#bb0000', '#aa0000',
                                '#880000', '#660000', '#440000', '#000000'];
 Blockly.FieldColour.COLUMNS = 5;
-
 
 Blockly.Blocks['math_number'] = {
   init: function() {
